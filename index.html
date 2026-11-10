@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AurorIA | Inicio</title>
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/8ayGylo.png">
+
+    <meta name="description" content="Explora experiencias de visión por computadora en tiempo real desde tu navegador web, juegos interactivos y herramientas de dibujo impulsados por IA.">
+    <meta name="keywords" content="cherylcann, inteligencia artificial, mediapipe, juegos interactivos, guitar hero ia, pizarra magica, desarrollo web">
+    <meta name="author" content="cherylcann">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://playauroria.netlify.app/">
+    <meta property="og:title" content="AurorIA | Aplicaciones Interactivas con IA">
+    <meta property="og:description" content="Juega y dibuja en tiempo real usando tus manos con visión por computadora e inteligencia artificial directamente desde tu navegador.">
+    <meta property="og:image" content="https://i.imgur.com/8ayGylo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://playauroria.netlify.app/">
+    <meta name="twitter:title" content="AurorIA | Aplicaciones Interactivas con IA">
+    <meta name="twitter:description" content="Juega y dibuja en tiempo real usando tus manos con visión por computadora e inteligencia artificial directamente desde tu navegador.">
+    <meta name="twitter:image" content="https://i.imgur.com/8ayGylo.png">
+
+    <script src="https://kit.fontawesome.com/e8a33dd2a5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p><img src="https://i.imgur.com/8ayGylo.png" alt="logo"> Auror<span>IA</span></p>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://github.com/cherylcann" target="_blank">Git Hub</a></li>
+            <li><a href="https://cherylcann.fly.dev/" target="_blank">Creador</a></li>
+            <li class="mobile-only">
+                <button class="theme-toggle" id="themeBtnMobile"><i class="fa-solid fa-sun" style="margin-right: 5px"></i> Modo Claro</button>
+            </li>
+        </ul>
+
+        <button class="theme-toggle web" id="themeBtnW"><i class="fa-solid fa-sun" style="margin-right: 5px"></i> Modo Claro</button>
+    </header>
+
+    <main>
+        <h1 class="hero-title">Aplicaciones Interactivas con tus Manos</h1>
+        <p class="hero-subtitle">Explora experiencias de visión por computadora en tiempo real directamente desde tu navegador web, impulsadas por Inteligencia Artificial.</p>
+
+        <div class="proyectos-grid">
+            <a href="guitar.html" class="card" id="guitar">
+                <div class="card-preview">🎸</div>
+                <div class="card-content">
+                    <h2 class="card-title">Guitar Hero IA</h2>
+                    <p class="card-desc">Un <span>juego de ritmo</span> con carriles donde debes atrapar las notas que caen usando gestos de pellizco en el aire.</p>
+                    <span class="card-action">Jugar ahora <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="pizarra.html" class="card" id="pizarra">
+                <div class="card-preview">🎨</div>
+                <div class="card-content">
+                    <h2 class="card-title">Pizarra Magica IA</h2>
+                    <p class="card-desc">Convierte la punta de tu dedo en un pincel digital flotante para <span>dibujar trazos</span> libres en cualquier color.</p>
+                    <span class="card-action">Abrir pizarra <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="esqueleto.html" class="card" id="esqueleto">
+                <div class="card-preview">🖐️</div>
+                <div class="card-content">
+                    <h2 class="card-title">Esqueleto de Manos IA</h2>
+                    <p class="card-desc"><span>Visualizador de puntos anatómicos</span> y movimientos en tiempo real analizadas por redes neuronales.</p>
+                    <span class="card-action">Ver esqueleto <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

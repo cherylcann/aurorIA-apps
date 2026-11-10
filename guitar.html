@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AurorIA | Guitar Hero</title>
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/8ayGylo.png">
+
+    <meta name="description" content="Explora experiencias de visión por computadora en tiempo real desde tu navegador web, juegos interactivos y herramientas de dibujo impulsados por IA.">
+    <meta name="keywords" content="cherylcann, inteligencia artificial, mediapipe, juegos interactivos, guitar hero ia, pizarra magica, desarrollo web">
+    <meta name="author" content="cherylcann">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://playauroria.netlify.app/">
+    <meta property="og:title" content="AurorIA | Aplicaciones Interactivas con IA">
+    <meta property="og:description" content="Juega y dibuja en tiempo real usando tus manos con visión por computadora e inteligencia artificial directamente desde tu navegador.">
+    <meta property="og:image" content="https://i.imgur.com/8ayGylo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://playauroria.netlify.app/">
+    <meta name="twitter:title" content="AurorIA | Aplicaciones Interactivas con IA">
+    <meta name="twitter:description" content="Juega y dibuja en tiempo real usando tus manos con visión por computadora e inteligencia artificial directamente desde tu navegador.">
+    <meta name="twitter:image" content="https://i.imgur.com/8ayGylo.png">
+
+    <script src="https://kit.fontawesome.com/e8a33dd2a5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/guitar.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p><img src="https://i.imgur.com/8ayGylo.png" alt="logo"> Auror<span>IA</span></p>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://github.com/cherylcann" target="_blank">Git Hub</a></li>
+            <li><a href="https://cherylcann.fly.dev/" target="_blank">Creador</a></li>
+            <li class="mobile-only">
+                <button class="theme-toggle" id="themeBtnMobile"><i class="fa-solid fa-sun" style="margin-right: 5px"></i> Modo Claro</button>
+            </li>
+        </ul>
+
+        <button class="theme-toggle web" id="themeBtnW"><i class="fa-solid fa-sun" style="margin-right: 5px"></i> Modo Claro</button>
+    </header>
+
+    <main>
+        <div class="camara">
+            <p id="estado">Cargando modelo de Inteligencia Artificial...</p>
+
+            <div class="container">
+                <video id="webcam" autoplay playsinline style="display: none;"></video>
+                <canvas id="output_canvas"></canvas>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Opciones</div>
+            <div class="card-content">
+                <div class="option select">
+                    <div class="option-heading">
+                        <label for="number-size">Numero de carriles</label>
+                        <span id="size-value">4</span>
+                    </div>
+
+                    <input type="range" id="number-size" min="1" max="8" value="4">
+                </div>
+                <div class="option select">
+                    <div class="option-heading">
+                        <label for="altura-size">Altura de la meta</label>
+                        <span id="size-value">88%</span>
+                    </div>
+
+                    <input type="range" id="altura-size" min="0" max="100" value="88">
+                </div>
+                <div class="option select">
+                    <div class="option-heading">
+                        <label for="velocidad-size">Velocidad de caida</label>
+                        <span id="size-value">10seg</span>
+                    </div>
+
+                    <input type="range" id="velocidad-size" min="1" max="40" value="10">
+                </div>
+                <div class="option select">
+                    <div class="option-heading">
+                        <label for="tiempo-size">Tiempo de Spawn</label>
+                        <span id="tiempo-value">1,5seg</span>
+                    </div>
+
+                    <input type="range" id="tiempo-size" min="1" max="30" value="15">
+                </div>
+
+                <div class="option">
+                    <label for="font-family">Dedo para pintar</label>
+
+                    <div class="select-container">
+                        <select id="font-family">
+                            <option value="8">Índice</option>
+                            <option value="12">Medio</option>
+                            <option value="16">Anular</option>
+                            <option value="20">Meñique</option>
+                        </select>
+
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/guitar.js"></script>
+</body>
+
+</html>
